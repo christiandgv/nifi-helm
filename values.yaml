@@ -110,7 +110,7 @@ sidecar:
 ## ref: http://kubernetes.io/docs/user-guide/persistent-volumes/
 ##
 persistence:
-  enabled: false
+  enabled: true
 
   # When creating persistent storage, the NiFi helm chart can either reference an already-defined
   # storage class by name, such as "standard" or can define a custom storage class by specifying
@@ -141,6 +141,8 @@ persistence:
   logStorage: 
     size: 5Gi
 
+  storageClass: openebs-jiva-default
+  storageProvisioner: openebs.io/provisioner-iscsi
 ## Configure resource requests and limits
 ## ref: http://kubernetes.io/docs/user-guide/compute-resources/
 ##

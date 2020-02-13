@@ -11,4 +11,4 @@ icon: https://svn.apache.org/repos/asf/nifi/site/trunk/images/niFi-logo-horizont
 source:
   - https://github.com/cetic/helm-nifi
 maintainers:
-  - name: alexnuttinck
+  - name: christiandgv
